@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/crysistear/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/crysistear/static/js/main.12fbb048.chunk.js",
+    "main.js.map": "/crysistear/static/js/main.12fbb048.chunk.js.map",
+    "runtime-main.js": "/crysistear/static/js/runtime-main.a4a875d2.js",
+    "runtime-main.js.map": "/crysistear/static/js/runtime-main.a4a875d2.js.map",
+    "static/js/2.24783ea6.chunk.js": "/crysistear/static/js/2.24783ea6.chunk.js",
+    "static/js/2.24783ea6.chunk.js.map": "/crysistear/static/js/2.24783ea6.chunk.js.map",
+    "index.html": "/crysistear/index.html",
+    "precache-manifest.caa3a417294137b2055e796dc769aed0.js": "/crysistear/precache-manifest.caa3a417294137b2055e796dc769aed0.js",
+    "service-worker.js": "/crysistear/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/crysistear/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.24783ea6.chunk.js.LICENSE.txt": "/crysistear/static/js/2.24783ea6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4a875d2.js",
+    "static/js/2.24783ea6.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.12fbb048.chunk.js"
+  ]
+}
