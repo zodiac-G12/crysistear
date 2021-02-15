@@ -10,7 +10,7 @@ const getData = async (setData, setLook) => {
     const jsonData = json.data;
     const dates = jsonData.map(item=>item.diagnosed_date);
     const counts = jsonData.map(item=>item.count);
-    console.log(dates, counts)
+    console.log(dates, counts);
 
     const data = {
       labels: dates,
@@ -35,19 +35,15 @@ const getData = async (setData, setLook) => {
 };
 
 function App() {
-  const [data, setData] = useState({} as any);
+  // 感染者の過去全データ
+  const [data, setData] = useState({});
+  // 今日の日付・感染者数
   const [look, setLook] = useState({date: "", count: null});
   const [range, setRange] = useState(0);
-  const [redraw, setRedraw] = useState(false);
-  let gRef;
 
   useEffect(() => {
     getData(setData, setLook);
   }, []);
-
-  useEffect(() => {
-    gRef?.chartInstance.resize();
-  }, [range]);
 
   return (
     <>
@@ -76,11 +72,10 @@ function App() {
         {look.count}
         <a style={{fontSize: "5vh", color:"black"}}> 人</a>
       </h1>
-      <div style={{width: `${100 + 900 * (range / 100)}vw`, height: "45vh", overflowX: "scroll", overflowY: "hidden", paddingTop: "30vh"}}>
+      <div style={{width: `${100 + 700 * (range / 100)}vw`, height: "50vh", overflowX: "scroll", overflowY: "hidden", paddingTop: "30vh"}}>
         <Bar
-          ref={ref => gRef = ref}
           data={data}
-          width={window.innerWidth * (1 + 9 * (range / 100))}
+          width={window.innerWidth + (1 + 7 * (range / 100))}
           redraw={true}
           height={window.innerHeight * 0.5}
           options={{
